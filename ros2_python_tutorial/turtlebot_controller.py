@@ -84,7 +84,6 @@ class TurtlebotController(Node):
         d_control_linear = self.l[1] * (prev_error_distance - error_distance) / dt
         d_control_angular = self.a[1] * (prev_error_theta - error_theta) / dt
 
-        
         i_control_linear = self.l[2] * i_error_distance * dt
         i_control_angular = self.a[2] * i_error_theta * dt
 
